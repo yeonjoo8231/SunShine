@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body {font-family: 'Nanum Gothic', sans-serif;} */
+body {
+    font-family: 'Malgun Gothic', sans-serif; 
+    color: #555; font-size: 15px;
+    text-align: center; line-height: 1.5;
+}
+.row {max-width: 1200px; margin: 0 auto; padding: 0 40px;}
+
+
+#header {
+    position: fixed; width: 100%; top: 0; left: 0; z-index: 98;
+    background: #fff; border: 1px solid #ddd;
+}
+#header h1 {float: left; margin-top: 25px;}
+#header #nav {float: right; width: 70%;}
+#header #nav .depth1 > li {
+    float: left; width: 20%;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+#header #nav .depth1 > li > a {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 25px 0;
+    display: block;
+}
+#header #nav .depth1 > li:hover > .depth2 {
+    display: block;
+}
+#header #nav .depth2 {
+    position: absolute; width: 220px;
+    top: 100%; left: 50%; transform: translateX(-50%);
+    background: #fff;
+    display: none; z-index: 99;
+}
+#header #nav .depth2 > li > a {
+    display: block;
+    padding: 14px;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.5s;
+}
+#header #nav .depth2 > li:last-child > a {border-bottom: none;}
+#header #nav .depth2 > li > a:hover {
+    background: #397dda; color: #fff;
+}
+
+
+
+
+
+#footer {
+    background: #303030; 
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+}
+#footer .comp a {
+    display: inline-block;
+    font-weight: bold; padding: 15px 10px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+}
+#footer > p { padding: 10px 0 ;}
+
+
+
+
+.gotop {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    right: 150px; bottom: 50px ;
+}

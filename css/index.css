@@ -1,0 +1,132 @@
+
+/*------------ article1-------------- */
+#article1 {
+    background: url(../img/main03.jpg) no-repeat center;
+    background-size: cover;
+    height: 750px; margin-top: 87px;
+    position: relative;
+}
+#article1 > .text {
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 3px #333;
+}
+#article1 .text > h2 { 
+    font-size: 50px; padding-bottom: 20px;
+    font-weight: bold;
+}
+#article1 .text > p {
+    font-size: 17px; 
+    line-height: 1.5;
+    font-weight: bold;
+}
+#section #article1 h2::after {
+    height: 0px;
+}
+
+
+
+/*------------ article2-------------- */
+#section h2 {
+    font-size: 35px; padding: 60px 0px 19px; 
+    font-weight: bold;
+    position: relative;
+}
+#section h2::after {
+    content: '';
+    width: 100px; height: 1px; background: #397dda;
+    position: absolute; bottom: 55%; left: 50%;
+    transform: translateX(-50%);
+}
+#article2 .outer {padding: 50px 50px 80px;}
+#article2 .outer > div {
+    float: left; width: 23.5%; margin-right: 2%;
+} 
+#article2 .outer > div:nth-child(4) {
+    margin-right: 0;
+}
+#article2 .outer > div > a:nth-of-type(1) {
+    display: inline-block; 
+    width: 170px; height: 170px; 
+    border-radius: 50%; 
+    background-color: #323232;
+    transition: all 0.5s;
+}
+#article2 .outer > div > a:nth-of-type(1):hover {
+    background: red;
+}
+#article2 .outer > div > h3 {
+    font-size: 17px;
+    padding-top: 35px;
+    font-weight: bold;
+}
+#article2 .outer > div > p {
+    font-size: 12px;
+    padding: 15px 0px 18px;
+}
+#article2 .outer > div > a:nth-of-type(2) {
+    font-size: 12px;
+    padding: 10px 46px;
+    border: 1px solid #000;
+}
+
+
+/*------------ article3-------------- */
+#article3 {
+    background: url(../img/bg_business.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+#article3 h2::after {
+    background: #fff;
+}
+#article3 .outbox {padding: 60px 80px;}
+#article3 .outbox > div {
+    float: left; width: 30%; margin-right: 3%;
+    background: #397dda; width: 300px;
+}
+#article3 .outbox > div:nth-child(3) {margin-right: 0;}
+#article3 .outbox > div > h4 {
+    font-size: 14px;
+    padding: 18px 0px;
+    font-weight: bold;
+}
+#article3 .outbox > div > p {
+    font-size: 13px;  padding: 0px 24px 18px;
+}
+
+#article3 .outbox .img {overflow: hidden; position: relative;}
+#article3 .outbox .img:hover > a > img {
+    transform: scale(1.2); transition: all 0.5s;
+}
+#article3 .outbox .img::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute; top: 0; left: 0; bottom: 0; right: 0;
+    opacity: 0; transition: all 0.4s;
+}
+#article3 .outbox .img:hover::before {
+    opacity: 1; z-index: 9;
+}
+#article3 .outbox .img:hover > .hovertxt {
+    opacity: 1; z-index: 10;
+}
+#article3 .outbox .img  > .hovertxt {
+    position: absolute; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#article3 .outbox .img  > .hovertxt a { display: block;}
+#article3 .outbox .img  > .hovertxt a:nth-child(1) { font-weight: bold; padding-bottom: 10px;}
+
+
+
+
+/*------------ article4-------------- */
+#article4 iframe { margin-top: 50px; height: 300px; vertical-align: top;}
+
+
+
+
