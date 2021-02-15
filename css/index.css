@@ -5,7 +5,12 @@ body {color: #555; }
 /* * {outline: none;} */
 
 /* header */
-#header { border-bottom:0px solid #ddd }
+#header { border-bottom:0px solid #ddd; transition: all 0.5s; }
+#header.on { 
+    position: fixed; width: 100%;
+    z-index: 99; background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #ddd;
+ } /*fixed시키면 넓이값은 자식이랑 같아진다.*/
 #header > div { max-width:1200px; margin:0 auto; position:relative; }
 #header h1 { padding:20px 0; margin-left:70px }
 /* 블록요소들을 한줄로 정렬할때 float 정렬 대신 position:absolute를 사용할 때는
@@ -150,10 +155,10 @@ body {color: #555; }
     background-size:cover; 
     position:relative;
  }
-.article1 .slide_group .slide  .txt {  
+ .article1 .slide_group .slide  .txt {  
     position:absolute;
-    top:50%; left:50%;
-    transform:translate(-50%, -50%);
+    top:50%; left:0%; right: 0%;
+    transform:translateY(-50%);
     text-align:center;
     color:#fff;
 }

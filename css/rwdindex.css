@@ -1,5 +1,19 @@
+@media screen and (max-width:1100px) {
+
+    #header .nav .depth1 > li > a { 
+        display:block; padding:30px 35px;
+        font-size:17px; text-align:center;
+        font-weight:bold
+    }
+
+}
+
+
+
 @media screen and (max-width:1024px) {
     
+    #header h1 { padding:20px 0; margin-left:30px }
+
     #header .open {display: block;
         position: absolute; top: 50%; right: 30px;
         transform: translateY(-50%);
@@ -67,9 +81,139 @@
         height:0; overflow:hidden; transition:all 0.5s;
         
     }
+    #header .nav .depth1 > li.on .depth2 {
+        height: auto;
+    }
     #header .nav .depth2 > li > a { 
         display:block; padding:13px 30px; font-weight:bold; 
     }
 
 
+    /* 슬릭슬라이드 */
+    /* 동그라미버튼 */
+    .article1 .slide_group .slick-dots {
+        position: absolute; bottom: 45px; left: 50%; transform: translate(-50%);
+    }
+    .article1 .slide_group .slick-dots li {
+        display: inline-block; margin: 0 5px;
+        width: auto; height: 2px; background: none;
+        position: relative;
+    }
+    /* width:auto 인라인성격을 가지고 있는애는 auto로하면 자식크기에 맞춰짐 */
+    .article1 .slide_group .slick-dots li button {
+        width: 20px; height: 20px;
+        border-radius: 50%;
+        background: #f00;
+        border: none; text-indent: -9999px; overflow: hidden;
+        position: static; top: 0; left: 0;
+    }
+    .article1 .slide_group .slick-dots li.slick-active button {
+        animation: none 3s both;
+        background: #00f;
+    }
+
+    /* 슬라이드 자동재생/멈춤 버튼 */
+    .article1 {position: relative;}
+    .article1 .playstop {
+        position: absolute; bottom: 43px; left: 50%;
+        transform: translate(70px) scale(1.4);
+        color: #fff; background: none; border: none;
+    }
+
+
+    /* COMPANY INTRODUCE 구역 article2 */
+    .article2 ul li {
+        float:left;
+        width:50%;
+        text-align:center; 
+        margin-right:0%;
+        margin-top:60px; 
+    }
+
+
+
+    /* BUSINESS INDUSTRY 구역 article3 */   
+    .article3 .txtbox p:nth-child(2){
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 20px;
+        background:#397dda;
+        padding-top:20px;
+        min-height: 150px;
+    }
+
+
+    /* footer */
+    #footer p:nth-child(2) span {
+        display: block;
+    }
+    #footer p:nth-child(2) .hide {
+        display: none;
+    }
+
 } /* 전체괄호 */
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+
+    .article1 .slide_group .slide  .txt h2 { 
+        font-size:30px; font-weight:bold; 
+        text-shadow:0px 0px 4px #555;
+        margin-bottom:25px;
+    }
+
+    /* COMPANY INTRODUCE 구역 article2 */
+    .article2 ul li {
+        float:left;
+        width:100%;
+        text-align:center; 
+        margin-right:0%;
+        margin-top:60px; 
+    }
+    #section .comment span {
+        display: block;
+    }
+    #section .comment .hide {
+        display: none;
+    }
+
+    
+    /* BUSINESS INDUSTRY 구역 article3 */
+    .article3 ul li {
+        float:left; width:100%;
+        margin-right:0%;
+        margin-top:60px;
+        text-align:center; 
+    }   
+    .article3 .imgbox img {
+        transition:all 0.5s;
+        width: 100%;
+    } 
+    /* max-width: 원본크기 이상 확대가 되지 않음; width: 부모크기에 맞춰짐; */
+    
+
+    .article3 .txtbox p:nth-child(2){
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 20px;
+        background:#397dda;
+        padding-top:20px;
+        min-height: auto;
+    }
+
+
+
+    /* footer */
+    #footer {background: #303030; padding: 0px 0 15px;
+        text-align: center; color: #8d8b8b; font-size: 12px;}
+    #footer .row {padding: 0;}
+    #footer p:nth-child(1) a { font-weight: bold; display: block;
+        font-size: 13px; color: #fff; padding: 15px 0px 15px 0px;
+        background: #397dda; border-top: 1px solid #aaa;
+    }
+
+}
